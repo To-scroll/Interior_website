@@ -5,7 +5,7 @@ import partner2 from '../../../public/images/partner2.webp';
 import partner3 from '../../../public/images/partner3.webp';
 import partner4 from '../../../public/images/partner4.webp';
 import partner5 from '../../../public/images/partner5.webp';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect} from 'react';
 import Image from 'next/image';
 
 const partner_images = [
@@ -20,7 +20,6 @@ const Partners = () => {
   const expandedPartners = [...partner_images, ...partner_images, ...partner_images];
   const [position, setPosition] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
-  const carouselRef = useRef(null);
   // Function to move the carousel left
   const moveCarousel = () => {
     setPosition(prev => {
@@ -52,7 +51,7 @@ const Partners = () => {
 
   return (
     <div className='relative w-full px-4 md:px-12 lg:px-44 mt-[580px] md:mt-60 mb-10'>
-      <div className='max-w-[340px] md:max-w-full mx-auto overflow-hidden' ref={carouselRef}>
+      <div className='max-w-[340px] md:max-w-full mx-auto overflow-hidden'>
         <div
           className='flex transition-transform duration-500 ease-in-out'
           style={{ transform: `translateX(-${position}%)` }}

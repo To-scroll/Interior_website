@@ -3,8 +3,35 @@
 
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
+.main_heading {
+  @apply font-medium
+}
 
+.paragraph {
+  @apply font-normal text-base
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scrolling {
+  display: flex;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+}
+
+.relative:hover .animate-scrolling {
+  animation-play-state: paused;
+}
