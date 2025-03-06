@@ -14,31 +14,43 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { PiSkypeLogoBold } from "react-icons/pi";
+import Link from 'next/link';
 
 const navbar_list = [
     {
         id: 1,
         name: "Home",
-        icon: <MdKeyboardArrowLeft size={18} />
+        icon: <MdKeyboardArrowLeft size={18} />,
+        route: "/",
     },
     {
         id: 2,
         name: "About",
-        icon: <MdKeyboardArrowLeft size={18} />
+        icon: <MdKeyboardArrowLeft size={18} />,
+        route: "/about",
     },
     {
         id: 3,
-        name: "Project",
-        icon: <MdKeyboardArrowLeft size={18} />
+        name: "Services",
+        icon: <MdKeyboardArrowLeft size={18} />,
+        route: "/services",
     },
     {
         id: 4,
-        name: "Blog",
-        icon: <MdKeyboardArrowLeft size={18} />
+        name: "Project",
+        icon: <MdKeyboardArrowLeft size={18} />,
+        route: "/projects",
     },
     {
         id: 5,
-        name: "Contact"
+        name: "Blog",
+        icon: <MdKeyboardArrowLeft size={18} />,
+        route: "/blog",
+    },
+    {
+        id: 6,
+        name: "Contact",
+        route: "/contact",
     },
 ]
 const Navbar = () => {
@@ -104,12 +116,16 @@ const Navbar = () => {
             <header className='hidden lg:flex fixed z-50 bg-white px-5 w-full justify-center items-center h-[90px] box-border border-b-2 border-[#eee]'>
                 <div className='flex justify-between items-center  w-full z-50 h-full  max-w-[1200px] '>
                     <div className='flex items-center hover:cursor-pointer  pr-[30px] border-r-2 h-full border-[#eee] '>
+                        <Link href='/'>
                         <h3 className='font-medium tracking-wider text-[30px] '>Interior.</h3>
+                        </Link>
                     </div>
                     <div className='flex items-center space-x-10 text-[#777] text-[17px]  h-full  '>
                         {navbar_list.map((item) => (
                             <ul key={item.id} className='flex hover:cursor-pointer  '>
+                                <Link href={item.route}>
                                 <li>{item.name}</li>
+                                </Link>
                             </ul>
                         ))}
                     </div>
