@@ -27,7 +27,7 @@ export default function Home() {
       <PicturegridSection />
       <HowWorksSection />
       <Testimonials />
-      <OurTeamSection />
+      <OurTeamSection flag = 'false'/>
       <BannerSection />
       <BlogSection />
     </>

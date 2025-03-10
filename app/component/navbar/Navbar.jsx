@@ -86,7 +86,7 @@ const Navbar = () => {
                 </div>
 
                 {isClick && (
-                    <nav id='navlist' className='lg:hidden h-screen fixed w-[320px] transform transition-all duration-500 ease-in-out right-0  box-border bg-[#171717] z-40 p-5'>
+                    <nav id='navlist' className='lg:hidden h-screen fixed w-[320px] top-0 right-0  box-border bg-[#171717] z-40 p-5'>
                         <IoMdCloseCircleOutline size={30} onClick={closeNav} className='text-[#eee] mb-[60px]' />
                         {navbar_list.map((item) => (
                             <ul key={item.id} className='flex flex-col   px-4  w-full border-b-1 border-[#333]  font-semibold text-[#bcbcbc] text-[14px]'>
@@ -106,7 +106,7 @@ const Navbar = () => {
                                 <p>9876543210</p>
                             </div>
                         </div>
-                        <button className='text-[#eee] hover:text-[#333] hover:bg-[#eee] font-semibold border rounded-3xl mt-[60px] ml-6 py-3 px-5'>
+                        <button className='text-[#eee] hover:text-[#333] hover:bg-[#eee] font-semibold border rounded-3xl mt-[30px] ml-6 py-3 px-5'>
                             Contact Us
                         </button>
                     </nav>

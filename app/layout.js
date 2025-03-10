@@ -3,6 +3,7 @@ import Navbar from "./component/navbar/Navbar";
 import { Roboto } from "next/font/google";
 import Footer from "./component/footer/Footer";
 import BottomFooter from "./component/footer/BottomFooter";
+import Newsletter from "./component/footer/Newsletter";
 
 const roboto = Roboto({
   weight: ['400','500','600', '700'],
@@ -18,10 +19,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en"  className={roboto.className}>
       <body>
         <Navbar />
         {children}
+        <Newsletter />
         <Footer />
         <BottomFooter />
       </body>

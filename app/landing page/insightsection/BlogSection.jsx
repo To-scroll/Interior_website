@@ -10,7 +10,7 @@ const BlogSection = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                     {BlogData.map((item) => (
                         <div key={item.id} className='flex flex-col'>
-                            <Image src={item.image} alt='blog image' width={1000} height={1000} className='w-full h-[400px]'/>
+                            <Image src={item.image} alt='blog image' width={1000} height={1000} className='w-full h-[400px] object-cover'/>
                             <h3 className='my-5 text-[#858585] '>{item.tag}</h3>
                             <h3 className='mb-5 text-[#4d4d4d] text-[20px] hover:underline hover:cursor-pointer'>{item.title}</h3>
                             <div className='flex justify-between w-full text-[#858585] '>

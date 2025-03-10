@@ -3,7 +3,7 @@ import React from 'react'
 const stats = [
     {
         id: 1,
-        value: "1234",
+        value: "1,234",
         tag: "Project Completed",
     },
     {
@@ -26,7 +26,7 @@ const stats = [
 const StatisticsSection = () => {
     return (
         <div className='relative w-full '>
-            <div className='relative flex justify-center py-10 lg:py-24  items-center'>
+            <div className='relative flex justify-center py-10 lg:py-24 px-6 lg:px-12 xl:px-40 items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10  max-w-[1200px] justify-center items-center '>
                     {stats.map((item) => (
                         <div key={item.id} className='p-4 '>
