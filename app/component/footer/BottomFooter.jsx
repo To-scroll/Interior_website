@@ -9,7 +9,6 @@ const BottomFooter = () => {
                 <h3>Website by <span className='underline hover:cursor-pointer'><a href='https://toscroll.com/' target='_blank'>Toscroll Technologies</a></span></h3>
                 <h3>Privacy Policy | Terms & Conditions</h3>
             </div>
-
         </div>
     )
 }

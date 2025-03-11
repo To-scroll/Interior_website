@@ -2,7 +2,7 @@ import React from 'react'
 import { RxSlash } from "react-icons/rx";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from 'next/image';
-import aboutimg from '../../../public/images/about-2.webp'
+import aboutimg from '../../../../public/images/about-2.webp'
 
 const AboutSection = () => {
     return (

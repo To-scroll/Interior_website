@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import tagimage from '../../../public/images/headline-img.webp'
+import tagimage from '../../../../public/images/headline-img.webp'
 
 const HeroSection = () => {
     return (

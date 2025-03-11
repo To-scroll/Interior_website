@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
-import partner1 from '../../../public/images/partner1.webp';
-import partner2 from '../../../public/images/partner2.webp';
-import partner3 from '../../../public/images/partner3.webp';
-import partner4 from '../../../public/images/partner4.webp';
-import partner5 from '../../../public/images/partner5.webp';
+import partner1 from '../../../../public/images/partner1.webp';
+import partner2 from '../../../../public/images/partner2.webp';
+import partner3 from '../../../../public/images/partner3.webp';
+import partner4 from '../../../../public/images/partner4.webp';
+import partner5 from '../../../../public/images/partner5.webp';
 import { useState, useEffect} from 'react';
 import Image from 'next/image';
 

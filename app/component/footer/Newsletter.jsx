@@ -1,5 +1,4 @@
 import React from 'react'
-import { GoArrowUpRight } from "react-icons/go";
 
 const Newsletter = () => {
     return (
@@ -9,7 +8,7 @@ const Newsletter = () => {
                     <h3 className='flex  p-6 text-[40px] md:text-[56px] text-[#333] capitalize font-medium whitespace-nowrap'>
                         stay up-To-date<br /> with Interior
                     </h3>
-                    <div className='flex flex-col w-full p-5 lg:p-10 xl:p-20'>
+                    <div className='flex flex-col w-full p-5  2xl:p-20'>
                         <h3 className='md:text-[18px] text-[#7f7f7f]  leading-8 mb-5'>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news.</h3>
                         <div className="relative w-full">
                             <input

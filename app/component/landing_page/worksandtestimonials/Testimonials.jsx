@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { IoIosArrowRoundDown } from "react-icons/io";
 import Image from 'next/image';
 import { ImQuotesLeft } from "react-icons/im";
-import architecture from '../../../public/images/architecture.webp'
+import architecture from '../../../../public/images/architecture.webp'
 import { TestimonialData } from '@/app/component/data/content_data';
 
 const Testimonials = () => {
@@ -35,7 +35,7 @@ const Testimonials = () => {
                     </h3>
                 </div>
                 <div className='mt-12 flex flex-wrap'>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 h-[400px] md:h-[450px] lg:h-[560px] xl:h-[550px]  w-full'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 h-[450px] md:h-[450px] lg:h-[560px] xl:h-[550px]  w-full'>
                         <div className='lg:col-span-1 pt-5 relative overflow-hidden'>
                             <div key={currentIndex} 
                                 className={`

@@ -1,12 +1,12 @@
 import React from 'react'
 import { IoIosArrowRoundDown } from "react-icons/io";
 import Image from 'next/image';
-import team1 from '../../../public/images/team1.webp'
-import team2 from '../../../public/images/team2.webp'
-import team3 from '../../../public/images/team3.webp'
-import team4 from '../../../public/images/team4.webp'
-import team5 from '../../../public/images/team5.webp'
-import team6 from '../../../public/images/team6.webp'
+import team1 from '../../../../public/images/team1.webp'
+import team2 from '../../../../public/images/team2.webp'
+import team3 from '../../../../public/images/team3.webp'
+import team4 from '../../../../public/images/team4.webp'
+import team5 from '../../../../public/images/team5.webp'
+import team6 from '../../../../public/images/team6.webp'
 
 const TeamData = [
     {
@@ -53,7 +53,6 @@ const OurTeamSection = ({ flag }) => {
     const direction = isAboutPage ? 'rtl' : 'ltr';
     const bgColor = isAboutPage ? 'bg-white' : 'bg-[#efefe9]';
     const arrowColor = isAboutPage ? 'text-[#7f7f7f]' : 'text-[#fff]';
-    const textAlign = isAboutPage ? 'text-left' : 'text-right';
     const titleAlign = isAboutPage ? 'text-right' : 'text-left';
     const splitted = TeamData.slice(2);
     
@@ -73,7 +72,7 @@ const OurTeamSection = ({ flag }) => {
                         <div className='flex flex-col'>
                             <Image src={TeamData[0].image} alt='team image' width={500} height={500} className='w-full h-[280px] object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
-                            <div className={textAlign}>
+                            <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{TeamData[0].name}</h3>
                             <p className='text-[#6b6b6b] font-normal capitalize'>{TeamData[0].designation}</p>
                             </div>
@@ -81,7 +80,7 @@ const OurTeamSection = ({ flag }) => {
                         <div className='flex flex-col'>
                             <Image src={TeamData[1].image} alt='team image' width={500} height={500} className='w-full h-[280px] object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
-                            <div className={textAlign}>
+                            <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{TeamData[1].name}</h3>
                             <p className='text-[#6b6b6b] font-normal capitalize'>{TeamData[1].designation}</p>
                             </div>
@@ -93,7 +92,7 @@ const OurTeamSection = ({ flag }) => {
                         <div key={item.id} className='flex flex-col'>
                             <Image src={item.image} alt='team image' width={500} height={500} className='w-full h-[280px] object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
-                            <div className={textAlign}>
+                            <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{item.name}</h3>
                             <p className='text-[#6b6b6b] font-normal capitalize'>{item.designation}</p>
                             </div>

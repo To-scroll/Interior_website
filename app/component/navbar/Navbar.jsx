@@ -1,5 +1,4 @@
 "use client";
-
 import React from 'react'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { GoSearch } from "react-icons/go";
@@ -15,6 +14,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { PiSkypeLogoBold } from "react-icons/pi";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const navbar_list = [
     {
@@ -54,6 +54,7 @@ const navbar_list = [
     },
 ]
 const Navbar = () => {
+    const pathname = usePathname();
     const [isClick, setisClick] = useState(false);
     const [isOpen, setisOpen] = useState(false);
     const openNav = () => {
@@ -72,7 +73,7 @@ const Navbar = () => {
         <div className='relative'>
             {/* mobile navbar starts  */}
             <header className='grid'>
-                <div className='fixed px-5 py-7 top-0 left-0 right-0 z-30 flex justify-between border-b-2 border-[#eee]  lg:hidden  w-full bg-white '>
+                <div className='fixed  px-5 py-7 top-0 left-0 right-0 z-30 flex justify-between border-b-2 border-[#eee]  lg:hidden  w-full bg-white '>
                     <div className='grid w-full hover:cursor-pointer '>
                         <h3 className='font-medium tracking-wider text-[30px]'>Interior.</h3>
                     </div>
@@ -86,12 +87,14 @@ const Navbar = () => {
                 </div>
 
                 {isClick && (
-                    <nav id='navlist' className='lg:hidden h-screen fixed w-[320px] top-0 right-0  box-border bg-[#171717] z-40 p-5'>
+                    <nav id='navlist' className='lg:hidden overflow-y-scroll h-screen fixed w-[320px] top-0 right-0  box-border bg-[#171717] z-40 p-5'>
                         <IoMdCloseCircleOutline size={30} onClick={closeNav} className='text-[#eee] mb-[60px]' />
                         {navbar_list.map((item) => (
                             <ul key={item.id} className='flex flex-col   px-4  w-full border-b-1 border-[#333]  font-semibold text-[#bcbcbc] text-[14px]'>
                                 <div className='flex items-center justify-between'>
-                                    <li onClick={closeNav} className='p-4  uppercase text-[12px] tracking-wider'>{item.name}</li>
+                                    <Link href={item.route}>
+                                        <li onClick={closeNav} className='p-4  uppercase text-[12px] tracking-wider'>{item.name}</li>
+                                    </Link>
                                     <p>{item.icon}</p>
                                 </div>
                             </ul>
@@ -117,14 +120,16 @@ const Navbar = () => {
                 <div className='flex justify-between items-center  w-full z-50 h-full  max-w-[1200px] '>
                     <div className='flex items-center hover:cursor-pointer  pr-[30px] border-r-2 h-full border-[#eee] '>
                         <Link href='/'>
-                        <h3 className='font-medium tracking-wider text-[30px] '>Interior.</h3>
+                            <h3 className='font-medium tracking-wider text-[30px] '>Interior.</h3>
                         </Link>
                     </div>
                     <div className='flex items-center space-x-10 text-[#777] text-[17px]  h-full  '>
                         {navbar_list.map((item) => (
                             <ul key={item.id} className='flex hover:cursor-pointer  '>
                                 <Link href={item.route}>
-                                <li>{item.name}</li>
+                                    <li className={`p-4  tracking-wider ${pathname === item.route ? 'font-semibold text-[#171717]' : ''
+                                        }`}
+                                    >{item.name}</li>
                                 </Link>
                             </ul>
                         ))}
@@ -157,7 +162,7 @@ const Navbar = () => {
                 )}
 
                 {isClick && (
-                    <div id='sidebar' className='lg:block h-screen fixed w-[400px] transform transition-all duration-500 ease-in-out top-0 right-0    bg-[#171717] z-50 py-10 px-10'>
+                    <div id='sidebar' className='lg:block overflow-y-scroll no-scrollbar h-screen fixed w-[400px] transform transition-all duration-500 ease-in-out top-0 right-0    bg-[#171717] z-50 py-10 px-10'>
                         <div className='flex my-5 border-b-2 border-[#333]  justify-between w-full hover:cursor-pointer '>
                             <h3 className='font-medium tracking-wider text-[#eee] text-[30px]'>Interior.</h3>
                             <IoCloseOutline size={30} onClick={closeNav} className='text-[#eee] mb-[60px]' />

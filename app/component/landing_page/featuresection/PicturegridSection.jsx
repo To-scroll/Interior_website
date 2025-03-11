@@ -3,8 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from 'react';
-import building from '../../../public/images/about-2.webp';
-import building2 from '../../../public/images/carousel-3.webp';
+import building from '../../../../public/images/about-2.webp';
+import building2 from '../../../../public/images/carousel-3.webp';
 
 const projectData = [
     {

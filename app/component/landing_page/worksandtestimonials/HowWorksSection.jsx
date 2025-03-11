@@ -33,7 +33,7 @@ const HowWorksSection = () => {
     return (
         <div className='relative w-full px-6 lg:px-12 xl:px-44 lg:mt-32 my-10'>
             <div className='flex flex-col w-full justify-between'>
-                <h3 className='text-[40px] lg:text-[85px] font-medium leading-10 lg:leading-24 mb-10'>How it Works</h3>
+                <h3 className='text-[40px] lg:text-[85px] font-medium leading-10 lg:leading-24 my-10'>How it Works</h3>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     <div className='lg:col-span-1 '>
                         <div className='p-7 border-t-[1px] border-[#ddd]'>

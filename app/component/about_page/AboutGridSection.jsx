@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import building1 from '../../public/images/carousel-2.webp'
+import building1 from '../../../public/images/carousel-2.webp'
 
 const historydata = [
     {

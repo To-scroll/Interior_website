@@ -1,9 +1,9 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
-import carousel1 from '../../../public/images/carousel-1.webp'
-import carousel2 from '../../../public/images/carousel-2.webp'
-import carousel3 from '../../../public/images/carousel-3.webp'
+import carousel1 from '../../../../public/images/carousel-1.webp'
+import carousel2 from '../../../../public/images/carousel-2.webp'
+import carousel3 from '../../../../public/images/carousel-3.webp'
 import { useState, useEffect } from 'react';
 import { GoArrowRight } from "react-icons/go";
 

@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
-import building4 from '../../public/images/building1.webp';
-import building1 from '../../public/images/carousel-1.webp';
+import building4 from '../../../public/images/building1.webp';
+import building1 from '../../../public/images/carousel-1.webp';
 import Image from 'next/image';
 import { useState } from 'react';
 

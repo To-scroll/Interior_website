@@ -2,12 +2,12 @@
 import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
-import building1 from '../../public/images/building1.webp'
-import building2 from '../../public/images/building1.webp'
-import building3 from '../../public/images/building1.webp'
-import building4 from '../../public/images/building1.webp'
-import building5 from '../../public/images/building1.webp'
-import building6 from '../../public/images/building1.webp'
+import building1 from '../../../public/images/building1.webp'
+import building2 from '../../../public/images/building1.webp'
+import building3 from '../../../public/images/building1.webp'
+import building4 from '../../../public/images/building1.webp'
+import building5 from '../../../public/images/building1.webp'
+import building6 from '../../../public/images/building1.webp'
 import { GoArrowUpRight } from "react-icons/go";
 
 
