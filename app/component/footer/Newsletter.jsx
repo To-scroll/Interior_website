@@ -6,7 +6,7 @@ const Newsletter = () => {
             <div className='md:absolute  left-0 top-0 lg:top-10 xl:top-28  right-0 xl:mx-40 z-20 bg-[#efefe9] max-w-7xl md:px-20 md:py-5 lg:px-10 lg:py-5'>
                 <div className='flex flex-col lg:flex-row items-start md:items-center justify-between lg:gap-10 '>
                     <h3 className='flex  p-6 text-[40px] md:text-[56px] text-[#333] capitalize font-medium whitespace-nowrap'>
-                        stay up-To-date<br /> with Interior
+                        stay up-To-date<br /> with Haven
                     </h3>
                     <div className='flex flex-col w-full p-5  2xl:p-20'>
                         <h3 className='md:text-[18px] text-[#7f7f7f]  leading-8 mb-5'>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news.</h3>

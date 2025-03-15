@@ -43,12 +43,6 @@ const navbar_list = [
     },
     {
         id: 5,
-        name: "Blog",
-        icon: <MdKeyboardArrowLeft size={18} />,
-        route: "/blog",
-    },
-    {
-        id: 6,
         name: "Contact",
         route: "/contact",
     },
@@ -75,7 +69,7 @@ const Navbar = () => {
             <header className='grid'>
                 <div className='fixed  px-5 py-7 top-0 left-0 right-0 z-30 flex justify-between border-b-2 border-[#eee]  lg:hidden  w-full bg-white '>
                     <div className='grid w-full hover:cursor-pointer '>
-                        <h3 className='font-medium tracking-wider text-[30px]'>Interior.</h3>
+                        <h3 className='font-medium tracking-wider text-[30px]'>Haven Builders</h3>
                     </div>
                     <div className='flex items-center group'>
                         <div onClick={openNav} className='grid space-y-2 hover:cursor-pointer  '>
@@ -102,7 +96,7 @@ const Navbar = () => {
                         <div className='flex  pl-6 mt-[60px] space-y-4 flex-col font-medium tracking-tight text-[15px] text-[#eee]'>
                             <div className='flex items-center space-x-4'>
                                 <MdMailOutline />
-                                <p>info@interior.com</p>
+                                <p>info@havenbuilders.com</p>
                             </div>
                             <div className='flex items-center space-x-4'>
                                 <MdOutlinePhoneInTalk />
@@ -118,11 +112,11 @@ const Navbar = () => {
 
             <header className='hidden lg:flex fixed z-50 bg-white px-5 w-full justify-center items-center h-[90px] box-border border-b-2 border-[#eee]'>
                 <div className='flex justify-between items-center  w-full z-50 h-full  max-w-[1200px] '>
-                    <div className='flex items-center hover:cursor-pointer  pr-[30px] border-r-2 h-full border-[#eee] '>
-                        <Link href='/'>
-                            <h3 className='font-medium tracking-wider text-[30px] '>Interior.</h3>
-                        </Link>
-                    </div>
+                    <Link href='/'>
+                        <div className='flex items-center hover:cursor-pointer  pr-[30px] border-r-2 h-full border-[#eee] '>
+                            <h3 className='font-medium tracking-wider text-[30px] '>Haven Builders</h3>
+                        </div>
+                    </Link>
                     <div className='flex items-center space-x-10 text-[#777] text-[17px]  h-full  '>
                         {navbar_list.map((item) => (
                             <ul key={item.id} className='flex hover:cursor-pointer  '>
@@ -164,7 +158,7 @@ const Navbar = () => {
                 {isClick && (
                     <div id='sidebar' className='lg:block overflow-y-scroll no-scrollbar h-screen fixed w-[400px] transform transition-all duration-500 ease-in-out top-0 right-0    bg-[#171717] z-50 py-10 px-10'>
                         <div className='flex my-5 border-b-2 border-[#333]  justify-between w-full hover:cursor-pointer '>
-                            <h3 className='font-medium tracking-wider text-[#eee] text-[30px]'>Interior.</h3>
+                            <h3 className='font-medium tracking-wider text-[#eee] text-[30px]'>Haven Builders.</h3>
                             <IoCloseOutline size={30} onClick={closeNav} className='text-[#eee] mb-[60px]' />
                         </div>
                         <div className='text-[#eee] leading-7 pb-5'>

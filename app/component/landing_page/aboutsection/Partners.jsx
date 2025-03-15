@@ -5,8 +5,9 @@ import partner2 from '../../../../public/images/partner2.webp';
 import partner3 from '../../../../public/images/partner3.webp';
 import partner4 from '../../../../public/images/partner4.webp';
 import partner5 from '../../../../public/images/partner5.webp';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const partner_images = [
   { id: 1, image: partner1 },
@@ -16,10 +17,17 @@ const partner_images = [
   { id: 5, image: partner5 },
 ];
 
-const Partners = () => {
+const Partners = ({ customMarginTop }) => {
   const expandedPartners = [...partner_images, ...partner_images, ...partner_images];
   const [position, setPosition] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
+  const pathname = usePathname();  
+  const isProjectsPage = pathname.includes('/projects');  
+  const marginTopClass = customMarginTop 
+    ? customMarginTop 
+    : isProjectsPage 
+      ? 'md:mt-32 mt-16' 
+      : 'md:mt-60';
   // Function to move the carousel left
   const moveCarousel = () => {
     setPosition(prev => {
@@ -33,24 +41,31 @@ const Partners = () => {
       return nextPosition;
     });
   };
+  
   useEffect(() => {
     // Set initial window width
-    setWindowWidth(window.innerWidth);
-    // Handle window resize
-    const handleResize = () => {
+    if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    // Start the carousel
-    const interval = setInterval(moveCarousel, 2000);
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener('resize', handleResize);
-    };
+      
+      // Handle window resize
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      
+      window.addEventListener('resize', handleResize);
+      
+      // Start the carousel
+      const interval = setInterval(moveCarousel, 2000);
+      
+      return () => {
+        clearInterval(interval);
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (
-    <div className='relative w-full px-4 md:px-12 lg:px-44 mt-[580px] md:mt-60 mb-10'>
+    <div className={`relative w-full px-4 md:px-12 lg:px-44  ${marginTopClass} mb-10`}>
       <div className='max-w-[340px] md:max-w-full mx-auto overflow-hidden'>
         <div
           className='flex transition-transform duration-500 ease-in-out'
@@ -59,8 +74,7 @@ const Partners = () => {
           {expandedPartners.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
-              className={`flex-none px-8 ${windowWidth < 768 ? 'w-1/2' : 'w-1/4'
-                }`}
+              className={`flex-none px-8 ${windowWidth < 768 ? 'w-1/2' : 'w-1/4'}`}
             >
               <div className='w-full h-auto flex justify-center items-center'>
                 <Image
@@ -76,7 +90,7 @@ const Partners = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Partners;

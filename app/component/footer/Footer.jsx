@@ -12,17 +12,16 @@ const Footer = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-24'>
                     <div className='flex flex-col gap-5 w-full '>
                         <Link href='/'>
-                        <h3 className='font-medium tracking-wider text-[30px] text-[#eee] hover:cursor-pointer'>Interior.</h3>
+                        <h3 className='font-medium tracking-wider text-[30px] text-[#eee] hover:cursor-pointer'>Haven Builders.</h3>
                         </Link>
                         <p className='text-[#858585]'>Design your Dream House
                         maxime dolor voluptatibus natus</p>
                     </div>
                     <div className='flex flex-col gap-5 w-full '>
                         <h3 className='font-medium tracking-wider text-[22px] text-[#eee]'>Office</h3>
-                        <p className='text-[#858585]'>Corporate Office-
-                        175 24th Street, DW-1 3567 London, UK 265</p>
+                        <p className='text-[#858585]'>NJC IT Park, Koluvally, Cherupuzha, Kerala 670511</p>
                         <div className='text-[#eee] '>
-                            <a href='#' className=' underline hover:cursor-pointer'>info@interior.com</a>
+                            <a href='#' className=' underline hover:cursor-pointer'>info@havenbuilders.com</a>
                             <p className='text-[18px] pt-2'>+91 9876543210</p>
                         </div>                        
                     </div>
