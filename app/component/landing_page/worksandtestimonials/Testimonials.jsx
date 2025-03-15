@@ -68,9 +68,10 @@ const Testimonials = () => {
                             <Image 
                                 src={architecture} 
                                 alt='architecture image' 
-                                className='  p-10 ' 
-                                width={500} 
-                                height={500} 
+                                className='w-full' 
+                                width={200} 
+                                height={200} 
+
                             />
                         </div>
                     </div>

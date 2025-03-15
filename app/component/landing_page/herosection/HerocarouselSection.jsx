@@ -71,7 +71,7 @@ const HerocarouselSection = () => {
   return (
     <div className='relative w-full'>
       <div className="relative w-full h-72 md:h-96">
-        <div className="absolute inset-0 w-full h-[500px]">
+        <div className="lg:absolute inset-0 w-full h-[500px]">
           <Image
             src={carousel_images[currentIndex].image}
             alt={`Carousel Image ${carousel_images[currentIndex].id}`}
@@ -81,7 +81,7 @@ const HerocarouselSection = () => {
           />
         </div>
       </div>
-      <div className='absolute z-20 lg:bottom-[-200px] right-0 bg-[#171717] w-full lg:w-[65%] px-10 py-8 text-white'>
+      <div className='lg:absolute z-20 lg:bottom-[-200px] right-0 bg-[#171717] w-full lg:w-[65%] px-10 py-8 text-white'>
         <div className='flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between md:items-center'>
           <div className='grid space-y-2 md:w-[50%] items-start text-left w-full'>
             <h3 className='text-[#757575]'>{carousel_images[currentIndex].version}</h3>

@@ -65,7 +65,7 @@ const Partners = ({ customMarginTop }) => {
   }, []);
 
   return (
-    <div className={`relative w-full px-4 md:px-12 lg:px-44  ${marginTopClass} mb-10`}>
+    <div className={`relative w-full px-4 md:px-12 lg:px-44 pt-10  ${marginTopClass} mb-10`}>
       <div className='max-w-[340px] md:max-w-full mx-auto overflow-hidden'>
         <div
           className='flex transition-transform duration-500 ease-in-out'

@@ -27,7 +27,7 @@ const page = () => {
         </div>
       </div>
       <div className='w-full'>
-        <Image src={building} alt='building-image' width={1000} height={1000} className='w-full object-cover  xl:h-[600px]' />
+        <Image src={building} alt='building-image' width={500} height={500} className='w-full object-cover  xl:h-[600px]' />
       </div>
       <ServiceTypeSection />
       <FeaturedWorksSection />

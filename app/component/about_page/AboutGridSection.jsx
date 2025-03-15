@@ -28,13 +28,13 @@ const AboutGridSection = () => {
         <div className='relative w-full px-6 lg:px-12 xl:px-40 mt-10 pb-28 md:pb-40'>
             <div className='flex flex-col relative justify-between'>
                 <div className='grid grid-cols-1 space-y-4 lg:space-y-0 lg:grid-cols-3 justify-between items-center relative p-3 w-full'>
-                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={500} width={500}  />
+                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={200} width={200}  />
                     <div className='p-5 w-full flex flex-col space-y-4 items-center text-center'>
                         <h3 className='text-[20px] text-[#171717] font-normal'>{historydata[0].title}</h3>
                         <p className='text-[18px] text-[#7f7f7f] font-normal'>{historydata[0].year}</p>
                         <p className='text-[#7f7f7f] tracking-wider font-normal'>{historydata[0].desc}</p>
                     </div>
-                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={500} width={500}  />
+                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={200} width={200}  />
                 </div>
                 <hr className='my-14 text-[#878787]'/>
                 <div className='grid grid-cols-1 space-y-4 lg:space-y-0 lg:grid-cols-3 justify-between items-center w-full p-3'>                    
@@ -43,7 +43,7 @@ const AboutGridSection = () => {
                         <p className='text-[18px] text-[#7f7f7f] font-normal'>{historydata[1].year}</p>
                         <p className='text-[#7f7f7f] tracking-wider font-normal'>{historydata[1].desc}</p>
                     </div>
-                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={500} width={500}  />
+                    <Image src={building1} className='w-full h-[220px]' alt='building image' height={200} width={200}  />
                     <div className='p-5 w-full flex flex-col space-y-4 items-center text-center'>
                         <h3 className='text-[20px] text-[#171717] font-normal'>{historydata[2].title}</h3>
                         <p className='text-[18px] text-[#7f7f7f] font-normal'>{historydata[2].year}</p>

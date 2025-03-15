@@ -46,7 +46,7 @@ const ServiceTypeSection = () => {
 
                     </div>
                     <div className='hidden w-full h-[550px] lg:flex flex-2'>
-                        <Image src={building} alt='building-image' width={500} height={500} className='object-cover' />
+                        <Image src={building} alt='building-image' width={500} height={500} className='object-cover w-full' />
                     </div>
 
                 </div>
