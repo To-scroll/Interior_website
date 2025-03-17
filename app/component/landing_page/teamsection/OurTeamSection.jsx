@@ -64,13 +64,13 @@ const OurTeamSection = ({ flag }) => {
                         <div className={titleAlign}>
                         <h3 className='text-[40px] lg:text-[85px] font-medium leading-0 lg:leading-20 xl:leading-9 capitalize'>Our Team</h3>
                         </div>
-                        <span className='inline-block box-border relative text-[80px] lg:text-[100px] top-7 lg:top-5'>
+                        <span className='md:inline-block hidden box-border relative text-[80px] lg:text-[100px] top-7 lg:top-5'>
                             <IoIosArrowRoundDown className={arrowColor} />
                         </span>
                     </div>
-                    <div className='grid grid-cols-1 p-5 md:grid-cols-2 gap-10 lg:gap-3 space-x-4 justify-center items-center mt-10 lg:mt-0'>
+                    <div className='grid grid-cols-1 p-5 md:grid-cols-2 gap-10 lg:gap-3  w-full justify-center items-center mt-10 lg:mt-0'>
                         <div className='flex flex-col'>
-                            <Image src={TeamData[0].image} alt='team image' width={200} height={200} className='w-full h-[280px] object-cover' />
+                            <Image src={TeamData[0].image} alt='team image' width={200} height={200} className='w-full h-full  object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
                             <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{TeamData[0].name}</h3>
@@ -78,7 +78,7 @@ const OurTeamSection = ({ flag }) => {
                             </div>
                         </div>
                         <div className='flex flex-col'>
-                            <Image src={TeamData[1].image} alt='team image' width={200} height={200} className='w-full h-[280px] object-cover' />
+                            <Image src={TeamData[1].image} alt='team image' width={200} height={200} className='w-full h-full object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
                             <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{TeamData[1].name}</h3>
@@ -90,7 +90,7 @@ const OurTeamSection = ({ flag }) => {
                 <div className='relative lg:mt-12 gap-10 lg:gap-3 w-full grid grid-cols-1 p-5 md:grid-cols-2 lg:grid-cols-4 justify-between'>
                     {splitted.map((item) => (
                         <div key={item.id} className='flex flex-col'>
-                            <Image src={item.image} alt='team image' width={200} height={200} className='w-full h-[280px] object-cover' />
+                            <Image src={item.image} alt='team image' width={200} height={200} className='w-full h-full object-cover' />
                             <hr className='my-5 text-[#b1b1b1]'/>
                             <div className='text-left'>
                             <h3 className='text-[20px] text-[#3b3a3a] font-medium capitalize'>{item.name}</h3>

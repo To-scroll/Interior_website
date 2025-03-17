@@ -27,7 +27,7 @@ const Testimonials = () => {
         <div className='relative w-full px-6 lg:px-12 xl:px-44 lg:mt-32 my-16'>
             <div className='flex flex-col w-full justify-between'>
                 <div className='flex justify-end w-full pb-14 border-b-[1px] border-[#ddd]'>
-                    <h3 className='text-[40px] lg:text-[85px] font-medium leading-0 lg:leading-9 text-right capitalize'>
+                    <h3 className='text-[35px] sm:text-[40px] w-full  lg:text-[85px] font-medium leading-0  lg:leading-9 text-right capitalize'>
                         What our clients<br />
                         <span className='inline-block box-border relative text-[80px] lg:text-[100px] top-7 lg:top-5'>
                             <IoIosArrowRoundDown className='text-[#ddd]' />

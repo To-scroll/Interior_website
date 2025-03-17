@@ -4,7 +4,7 @@ import { GoNorthStar } from "react-icons/go";
 const FeatureCarouselSection = () => {
   return (
     <div className="relative overflow-hidden max-w-full md:mt-20 mx-auto border-[#c8c8c8] border-t-2 py-8">
-      <div className="flex w-[600%] md:w-[700%]   xl:w-[350%] py-5 animate-scrolling">
+      <div className="flex w-[600%] md:w-[700%]   2xl:w-[350%] py-5 animate-scrolling">
         {/* First Duplicate */}
         <div className="flex gap-5 px-5">
           <FeatureCard />

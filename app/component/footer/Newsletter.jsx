@@ -3,7 +3,7 @@ import React from 'react'
 const Newsletter = () => {
     return (
         <div className='bg-white relative  w-full min-h-[200px]  xl:px-40 pt-10'>
-            <div className='md:absolute  left-0 top-0 lg:top-10 xl:top-28  right-0 xl:mx-40 z-20 bg-[#efefe9] max-w-7xl md:px-20 md:py-5 lg:px-10 lg:py-5'>
+            <div className='md:absolute  left-0 top-0 lg:top-14 xl:top-28  right-0 xl:mx-40 z-20 bg-[#efefe9] max-w-7xl md:px-20 md:py-5 lg:px-10 lg:py-5'>
                 <div className='flex flex-col lg:flex-row items-start md:items-center justify-between lg:gap-10 '>
                     <h3 className='flex  p-6 text-[40px] md:text-[56px] text-[#333] capitalize font-medium whitespace-nowrap'>
                         stay up-To-date<br /> with Haven
