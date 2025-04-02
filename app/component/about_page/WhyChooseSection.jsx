@@ -1,7 +1,9 @@
 "use client";
 import React from 'react';
-import building4 from '../../../public/images/building1.webp';
-import building1 from '../../../public/images/carousel-1.webp';
+import building4 from '../../../public/images/interior8.webp';
+import building1 from '../../../public/images/interior9.webp';
+import building2 from '../../../public/images/interior10.webp';
+import building3 from '../../../public/images/interior11.webp';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -19,12 +21,12 @@ const choosedata = [
     {
         id: 3,
         title: "quality craftmanship",
-        image: building4
+        image: building2
     },
     {
         id: 4,
         title: "experienced team",
-        image: building1
+        image: building3
     },
 ];
 

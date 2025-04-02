@@ -2,12 +2,10 @@
 import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
-import building1 from '../../../public/images/building1.webp'
-import building2 from '../../../public/images/building1.webp'
-import building3 from '../../../public/images/building1.webp'
-import building4 from '../../../public/images/building1.webp'
-import building5 from '../../../public/images/building1.webp'
-import building6 from '../../../public/images/building1.webp'
+import building1 from '../../../public/images/interior4.webp'
+import building2 from '../../../public/images/interior5.webp'
+import building3 from '../../../public/images/interior7.webp'
+import building6 from '../../../public/images/interior6.webp'
 import { GoArrowUpRight } from "react-icons/go";
 
 
@@ -37,20 +35,20 @@ const WhatWeDoSection = () => {
             image: building3,
             content: "Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque."
         },
+        // {
+        //     id: 4,
+        //     title: "Historic Preservation",
+        //     image: building4,
+        //     content: "Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla."
+        // },
+        // {
+        //     id: 5,
+        //     title: "Landscape Design",
+        //     image: building5,
+        //     content: "Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla."
+        // },
         {
             id: 4,
-            title: "Historic Preservation",
-            image: building4,
-            content: "Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla."
-        },
-        {
-            id: 5,
-            title: "Landscape Design",
-            image: building5,
-            content: "Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla."
-        },
-        {
-            id: 6,
             title: "Furniture Remodel",
             image: building6,
             content: "Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque."

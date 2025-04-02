@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
-import building from '../../../public/images/carousel-1.webp'
+import building from '../../../public/images/interior13.webp'
 import { services_tags } from '../data/services_data'
 import { useState } from 'react'
 import { IoAddSharp } from "react-icons/io5";
@@ -45,7 +45,7 @@ const ServiceTypeSection = () => {
                         ))}
 
                     </div>
-                    <div className='hidden w-full h-[550px] lg:flex flex-2'>
+                    <div className='hidden w-full h-[350px] lg:flex flex-2'>
                         <Image src={building} alt='building-image' width={500} height={500} className='object-cover w-full' />
                     </div>
 

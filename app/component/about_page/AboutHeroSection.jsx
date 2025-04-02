@@ -13,8 +13,8 @@ const AboutHeroSection = () => {
                 <h3 className='absolute top-[-20px] text-[40px] lg:text-[65px] xl:text-[85px] z-20 font-medium leading-10 lg:leading-24 text-[#171717] capitalize'>learn about our<span className='inline-block'><RxSlash className='text-[#d0d0cf]' /></span> <br /> <span className='lg:ml-35 text-[#171717] lg:text-white'> vision and values</span></h3>
                 <p className='hidden lg:block mr-10 absolute right-0 top-0 text-[25px] text-[#3a3a3a] font-normal mb-24'>Our History</p>
                 <div className='py-8'>
-                    <p className='text-[#656565] text-[17px]  tracking-wide'>Archipix was founded in 1995 in California, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill. <br /><br />
-                        The company has designed the John Hancock Center, One World Trade Center and Burj Khalifa, which is currently the tallest building in the world. Throughout its history, Archipix has been recognized for its innovative designs and commitment to sustainability.</p>
+                    <p className='text-[#656565] text-[17px]  tracking-wide'>Haven Builders was founded in 1995 in California, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill. <br /><br />
+                        The company has designed the John Hancock Center, One World Trade Center and Burj Khalifa, which is currently the tallest building in the world. Throughout its history, Haven Builders has been recognized for its innovative designs and commitment to sustainability.</p>
                 </div>
             </div>
         </div>

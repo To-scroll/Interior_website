@@ -15,7 +15,7 @@ const OurServicesSection = () => {
                 <div className='flex flex-col lg:pt-32'>
                     <h3 className="text-[40px] md:text-[50px] mb-6 lg:text-[85px] mr-7 font-medium leading-10 lg:leading-[96px] capitalize text-end">our services</h3>
                     {services_tags.map((item, index) => {
-                        const isLastTwo = index >= totalItems - 3;
+                        const isLastTwo = index >= totalItems - 1;
                         return (
                             <div key={item.id}
                                 className="w-full flex justify-between py-10 border-b border-slate-200"

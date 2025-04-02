@@ -8,7 +8,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { useState } from 'react';
 import { IoCloseOutline } from "react-icons/io5";
 import Image from 'next/image';
-import building from '../../../public/images/offcanvas-img.webp'
+import building from '../../../public/images/interior3.webp'
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -162,7 +162,7 @@ const Navbar = () => {
                             <IoCloseOutline size={30} onClick={closeNav} className='text-[#eee] mb-[60px]' />
                         </div>
                         <div className='text-[#eee] leading-7 pb-5'>
-                            <p>Welcome to Archipix, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style.</p>
+                            <p>Welcome to Haven Builders, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style.</p>
                         </div>
                         <div>
                             <Image src={building} className='w-full ' alt='building-image' width={1000} height={1000} />

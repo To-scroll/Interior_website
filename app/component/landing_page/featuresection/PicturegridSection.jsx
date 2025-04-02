@@ -3,27 +3,30 @@ import React from 'react';
 import Image from 'next/image';
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from 'react';
-import building from '../../../../public/images/about-2.webp';
-import building2 from '../../../../public/images/carousel-3.webp';
+import building from '../../../../public/images/interior11.webp';
+import building2 from '../../../../public/images/interior14.webp';
+import building3 from '../../../../public/images/interior1.webp';
+import building4 from '../../../../public/images/interior13.webp';
+
 
 const projectData = [
     {
-        image: building,
+        image: building2,
         title: 'Mediterranian Villa',
         category: 'Architecture'
     },
     {
-        image: building2,
+        image: building,
         title: 'Industrial Chic Restaurant',
         category: 'Interior'
     },
     {
-        image: building2,
+        image: building3,
         title: 'Mediterranian Villa',
         category: 'Architecture'
     },
     {
-        image: building,
+        image: building4,
         title: 'New Valley Villa',
         category: 'Architecture'
     }

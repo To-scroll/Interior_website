@@ -8,20 +8,20 @@ export const TestimonialData = [
         image: avatar1,
         name: 'Mathew Roy ',
         location: "New York, USA",
-        desc: "I hired Archipix to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Archipix team was professional.",
+        desc: "I hired Haven Builders to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Haven Builders team was professional.",
     },
     {
         id: 2,
         image: avatar2,
         name: 'Lisa PK',
         location: "New York, USA",
-        desc: "I hired Archipix to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Archipix team was professional.",
+        desc: "I hired Haven Builders to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Haven Builders team was professional.",
     },
     {
         id: 3,
         image: avatar3,
         name: 'Elwin Micheal',
         location: "New York, USA",
-        desc: "I hired Archipix to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Archipix team was professional.",
+        desc: "I hired Haven Builders to design and build my dream home, and I could be happier with the result. From the initial consultation to the final walk-through, the Haven Builders team was professional.",
     },
 ];

@@ -39,15 +39,15 @@ const ServiceSection = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2  self-start">
+                    <div className="w-full lg:w-1/2 pb-28  self-start">
                         <div className={`relative transition-opacity lg:top-36 duration-500 ease-in-out ${isChanging ? 'opacity-0' : 'opacity-100'}`}>
                             <div className="mb-6 overflow-hidden">
                                 <Image
-                                    src={activeServiceData.image}
+                                    src={activeServiceData.images[0]}
                                     alt={activeServiceData.tag}
                                     width={500}
                                     height={300}
-                                    className="w-[400px] h-[450px] object-cover  transition-all duration-600 ease-in-out"
+                                    className="md:w-[500px] md:h-[450px] object-cover  transition-all duration-600 ease-in-out"
                                 />
                             </div>
                             <div className="bg-[#ececec]  transition-all duration-600 ease-in-out  lg:w-[400px] flex flex-col 
